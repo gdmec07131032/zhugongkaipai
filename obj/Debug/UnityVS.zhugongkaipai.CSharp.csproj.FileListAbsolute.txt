@@ -1,0 +1,17 @@
+E:\Site\zhugongkaipai\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+E:\Site\zhugongkaipai\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+E:\Site\zhugongkaipai\Temp\UnityVS_bin\Debug\UnityEditor.dll
+E:\Site\zhugongkaipai\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+E:\Site\zhugongkaipai\Temp\UnityVS_bin\Debug\UnityEngine.Analytics.dll
+E:\Site\zhugongkaipai\Temp\UnityVS_bin\Debug\UnityEngine.dll
+E:\Site\zhugongkaipai\Temp\UnityVS_bin\Debug\UnityEngine.Networking.dll
+E:\Site\zhugongkaipai\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+E:\Site\zhugongkaipai\Temp\UnityVS_bin\Debug\UnityEngine.xml
+E:\Site\zhugongkaipai\Temp\UnityVS_bin\Debug\UnityEditor.xml
+E:\Site\zhugongkaipai\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+E:\Site\zhugongkaipai\Temp\UnityVS_bin\Debug\UnityEngine.Networking.xml
+E:\Site\zhugongkaipai\Temp\UnityVS_bin\Debug\UnityEngine.Analytics.xml
+E:\Site\zhugongkaipai\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+E:\Site\zhugongkaipai\obj\Debug\UnityVS.zhugongkaipai.CSharp.csprojResolveAssemblyReference.cache
+E:\Site\zhugongkaipai\obj\Debug\Assembly-CSharp.dll
+E:\Site\zhugongkaipai\obj\Debug\Assembly-CSharp.pdb
