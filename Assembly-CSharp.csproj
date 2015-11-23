@@ -183,6 +183,7 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\SceneMail.cs" />
      <Compile Include="Assets\Scriptes\Game\BtnLogin.cs" />
      <Compile Include="Assets\Scriptes\Game\SceneLoading.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
