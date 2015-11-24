@@ -183,9 +183,11 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
-     <Compile Include="Assets\SceneMail.cs" />
+     <Compile Include="Assets\Scriptes\Core\Asset\ResourcesMgr.cs" />
      <Compile Include="Assets\Scriptes\Game\BtnLogin.cs" />
      <Compile Include="Assets\Scriptes\Game\SceneLoading.cs" />
+     <Compile Include="Assets\Scriptes\Game\SceneMail.cs" />
+     <Compile Include="Assets\Scriptes\TestRes.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\ReadMe - 3.9.1.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 1.shader" />
