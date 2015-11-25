@@ -3,9 +3,10 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 
-public class SceneMail : MonoBehaviour {
+public class SceneMail : SceneBase
+{
 
-    public GameObject mItem;
+    private GameObject mItem;
 
     private List<GameObject> mItemList;
 

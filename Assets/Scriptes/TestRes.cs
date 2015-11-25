@@ -6,9 +6,8 @@ public class TestRes : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
-        GameObject obj = ResourcesMgr.GetInstance().CreateGameObject("Game/UI/SceneLoading", false);
-        obj.transform.parent = this.gameObject.transform;
-        obj.transform.localScale = Vector3.one;
+        //GameObject obj = ResourceMgr.GetInstance().CreateGameObject("Game/UI/SceneLogin", false);
+        SceneMgr.Instance.SwitchScene("SceneLogin");
 	}
 	
 	// Update is called once per frame
@@ -16,3 +15,4 @@ public class TestRes : MonoBehaviour {
 	
 	}
 }
+//"($File)" $(Line)

@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class SceneLoading : MonoBehaviour {
+public class SceneLoading : SceneBase {
 
     private UISlider mSlider;
     private UILabel mLabel;
