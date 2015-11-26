@@ -7,13 +7,21 @@ public class SceneLoading : SceneBase {
     private UISlider mSlider;
     private UILabel mLabel;
 
-    void Start()
+    protected override void OnInitSkin()
     {
-        mSlider = transform.Find("Slider").GetComponent<UISlider>();
-        mLabel = transform.Find("Label").GetComponent<UILabel>();
+        base.SetMainSkinPath("Game/UI/SceneLoading");
+        base.OnInitSkin();
+    }
+    protected override void OnInitDone()
+    {
+        base.OnInitDone();
+        string str = (string)sceneArgs[0];
+        Debug.Log(str);
+
+        mSlider = skinTransform.Find("Slider").GetComponent<UISlider>();
+        mLabel = skinTransform.Find("Label").GetComponent<UILabel>();
         mSlider.value = 0.0f;
         SetLabelInfo(mSlider.value);
-        
         StartCoroutine(Test());
     }
 
@@ -35,6 +43,7 @@ public class SceneLoading : SceneBase {
         else
         {
             Debug.Log("加载完成了!");
+            SceneMgr.Instance.SwitchScene("SceneMail", "hello world");
         }
     }
 

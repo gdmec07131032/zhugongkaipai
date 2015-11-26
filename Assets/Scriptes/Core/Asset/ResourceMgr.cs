@@ -70,8 +70,8 @@ public class ResourceMgr : MonoBehaviour
     {
         UnityEngine.GameObject assetObj = Load<GameObject>(path, cache);
         GameObject go = UnityEngine.Object.Instantiate(assetObj) as GameObject;
-        go.transform.parent = uiRoot.transform;
-        go.transform.localScale = Vector3.one;
+        //go.transform.parent = uiRoot.transform;
+        //go.transform.localScale = Vector3.one;
         if (go == null)
         {
             Debug.LogWarning("从Resource创建对象失败：" + path);

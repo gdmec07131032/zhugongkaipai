@@ -7,18 +7,26 @@ public class SceneLogin : SceneBase
     private UIInput mInputAcc;
     private UIInput mInputPass;
 
-	// Use this for initialization
-	void Start () {
-        base.Init();
-        mInputAcc = transform.Find("InputAcc").GetComponent<UIInput>();
-        mInputPass = transform.Find("InputPass").GetComponent<UIInput>();
-        
-	}
-
     protected override void OnClick(GameObject go)
     {
         base.OnClick(go);
         ClickButton(go);
+    }
+    protected override void OnInitSkin()
+    {
+        base.SetMainSkinPath("Game/UI/SceneLogin");
+        base.OnInitSkin();
+    }
+    protected override void OnInitDone()
+    {
+        base.OnInitDone();
+        mInputAcc = skinTransform.Find("InputAcc").GetComponent<UIInput>();
+        mInputPass = skinTransform.Find("InputPass").GetComponent<UIInput>();
+
+        string str = (string)sceneArgs[0];
+        int i = (int)sceneArgs[1];
+        bool bo = (bool)sceneArgs[2];
+        Debug.Log(str + "---" + i + "---" + bo);
     }
 
     protected override void OnDestroyFront()
@@ -42,16 +50,11 @@ public class SceneLogin : SceneBase
             Debug.Log(string.Format("点击了登陆 账号：{0} 密码：{1}", mInputAcc.value, mInputPass.value));
             //GameObject go = ResourceMgr.GetInstance().CreateGameObject("Game/UI/SceneLoading", false);
             //Destroy(this.gameObject);
-            SceneMgr.Instance.SwitchScene("SceneLoading");
+            SceneMgr.Instance.SwitchScene("SceneLoading","hello world");
         }
         else if (click.name.Equals("BtnReg"))
         {
             Debug.Log("BtnReg");
         }
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

@@ -10,9 +10,18 @@ public class SceneMail : SceneBase
 
     private List<GameObject> mItemList;
 
-    void Start()
-    {    
-        mItem = transform.Find("PanelMove/Items/Item").gameObject;
+    protected override void OnInitSkin()
+    {
+        base.SetMainSkinPath("Game/UI/SceneMail");
+        base.OnInitSkin();
+    }
+    protected override void OnInitDone()
+    {
+        base.OnInitDone();
+        string str = (string)sceneArgs[0];
+        Debug.Log(str);
+
+        mItem = skinTransform.Find("PanelMove/Items/Item").gameObject;
         ShowItems();
     }
 
