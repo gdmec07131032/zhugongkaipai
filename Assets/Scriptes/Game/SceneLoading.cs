@@ -32,7 +32,7 @@ public class SceneLoading : SceneBase {
     IEnumerator Test()
     {
         yield return 1;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.01f);
         mSlider.value += 0.01f;
         SetLabelInfo(mSlider.value);
 
@@ -43,12 +43,12 @@ public class SceneLoading : SceneBase {
         else
         {
             Debug.Log("加载完成了!");
-            SceneMgr.Instance.SwitchScene("SceneMail", "hello world");
+            SceneMgr.Instance.SwitchScene("SceneHome", "hello world");
         }
     }
 
     void SetLabelInfo(float value)
     {
-        mLabel.text = (value * 100.0f).ToString() + "%";
+        mLabel.text = (value * 100.0f).ToString(".00") + "%";
     }
 }

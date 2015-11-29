@@ -1,32 +1,29 @@
-﻿using UnityEngine;
+﻿ using UnityEngine;
 using System.Collections;
 using System;
 
-public class SceneMgr
-{
+public class PanelMgr : MonoBehaviour {
 
     #region 初始化
-    protected static SceneMgr mInstance;
-    public static SceneMgr Instance
+    protected static PanelMgr mInstance;
+    public static PanelMgr Instance
     {
         get
         {
             if (mInstance == null)
             {
-                mInstance = new SceneMgr();
+                mInstance = new PanelMgr();
             }
             return mInstance;
         }
     }
     #endregion
-    private GameObject curren;
+    //private GameObject curren;
     private Transform parentObj = null;
-
-    public void SwitchScene(string name, params object[] sceneArgs)
+    public void ShowPanel(string name, params object[] sceneArgs)
     {
-        //GameObject scene = ResourceMgr.GetInstance().CreateGameObject("Game/UI/"+name, false);
         GameObject scene = new GameObject(name);
-        SceneBase baseObj = scene.AddComponent(Type.GetType(name)) as SceneBase;
+        PanelBase baseObj = scene.AddComponent(Type.GetType(name)) as PanelBase;
         baseObj.Init(sceneArgs);
         if (parentObj == null)
         {
@@ -36,10 +33,6 @@ public class SceneMgr
         scene.transform.parent.localEulerAngles = Vector3.zero;
         scene.transform.localScale = Vector3.one;
         scene.transform.localPosition = Vector3.zero;
-        if (curren != null)
-        {
-            GameObject.Destroy(curren);
-        }
-        curren = scene;
+
     }
 }

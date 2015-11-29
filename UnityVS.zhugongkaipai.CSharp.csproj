@@ -201,8 +201,12 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
     <Compile Include="Assets\Scriptes\Core\Asset\ResourceMgr.cs" />
+    <Compile Include="Assets\Scriptes\Core\View\PanelBase.cs" />
+    <Compile Include="Assets\Scriptes\Core\View\PanelMgr.cs" />
     <Compile Include="Assets\Scriptes\Core\View\SceneBase.cs" />
     <Compile Include="Assets\Scriptes\Core\View\SceneMgr.cs" />
+    <Compile Include="Assets\Scriptes\Game\Home\PanelPlayInfo.cs" />
+    <Compile Include="Assets\Scriptes\Game\Home\SceneHome.cs" />
     <Compile Include="Assets\Scriptes\Game\SceneLoading.cs" />
     <Compile Include="Assets\Scriptes\Game\SceneLogin.cs" />
     <Compile Include="Assets\Scriptes\Game\SceneMail.cs" />

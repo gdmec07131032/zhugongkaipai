@@ -7,9 +7,9 @@ public class SceneMail : SceneBase
 {
 
     private GameObject mItem;
-
     private List<GameObject> mItemList;
 
+    #region
     protected override void OnInitSkin()
     {
         base.SetMainSkinPath("Game/UI/SceneMail");
@@ -18,12 +18,11 @@ public class SceneMail : SceneBase
     protected override void OnInitDone()
     {
         base.OnInitDone();
-        string str = (string)sceneArgs[0];
-        Debug.Log(str);
 
         mItem = skinTransform.Find("PanelMove/Items/Item").gameObject;
         ShowItems();
     }
+    #endregion
 
     /// <summary>
     /// 显示item列表
