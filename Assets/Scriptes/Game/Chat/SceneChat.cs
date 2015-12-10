@@ -1,19 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SceneHome : SceneBase
-{
+public class SceneChat : SceneBase {
 
     #region 初始化相关
     protected override void OnInitSkin()
     {
-        base.SetMainSkinPath("Game/UI/Home/SceneHome");
+        base.SetMainSkinPath("Game/UI/Chat/SceneChat");
         base.OnInitSkin();
     }
     protected override void OnInitDone()
     {
         base.OnInitDone();
-        
+
     }
     protected override void OnClick(GameObject go)
     {
@@ -24,18 +23,14 @@ public class SceneHome : SceneBase
     {
         base.OnResetArgs(sceneArgs);
     }
-    #endregion 
+    #endregion
 
     #region 点击事件
     void ClickButton(GameObject click)
     {
-        if (click.name.Equals("BtnMail"))
+        if (click.name.Equals("BtnReturn"))
         {
-            SceneMgr.Instance.SwitchScene(SceneType.SceneMail);
-        }
-        else if (click.name.Equals("border"))
-        {
-            PanelMgr.Instance.ShowPanel(PanelType.PanelPlayInfo);
+            SceneMgr.Instance.SwitchToPrevScene();
         }
     }
     #endregion

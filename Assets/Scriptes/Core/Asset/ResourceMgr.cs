@@ -5,7 +5,6 @@ public class ResourceMgr : MonoBehaviour
 {
     #region 初始化
     private static ResourceMgr mInstance;
-    private GameObject uiRoot;
 
     /// <summary>
     /// 获取资源加载实例
@@ -22,10 +21,6 @@ public class ResourceMgr : MonoBehaviour
     private ResourceMgr()
     {
         hashtable = new Hashtable();
-    }
-    void Awake()
-    {
-        uiRoot = GameObject.FindGameObjectWithTag("UIRoot");
     }
     #endregion
 
@@ -45,7 +40,7 @@ public class ResourceMgr : MonoBehaviour
             return hashtable[path] as T;
         }
 
-        Debug.Log(string.Format("Load assset frome resource folder,path:{0},cache:{1}", path, cache));
+        //Debug.Log(string.Format("Load assset frome resource folder,path:{0},cache:{1}", path, cache));
         T assetObj = Resources.Load<T>(path);
         if (assetObj == null)
         {

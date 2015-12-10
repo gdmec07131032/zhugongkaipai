@@ -8,11 +8,13 @@ public class PanelPlayInfo : PanelBase {
     {
         base.SetMainSkinPath("Game/UI/Home/PanelPlayInfo");
         base.OnInitSkin();
+        _type = PanelType.PanelPlayInfo;
+        _showStyle = PanelMgr.PanelShowStyle.DownToSlide;
+        _openDuration = 0.4f;
     }
     protected override void OnInitDone()
     {
         base.OnInitDone();
-
     }
     protected override void OnClick(GameObject go)
     {

@@ -2,143 +2,64 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class PanelBase : MonoBehaviour {
-
-    #region 皮肤
-    private GameObject _skin;
-    /// <summary>
-    /// 皮肤
-    /// </summary>
-    public GameObject skin
+public class PanelBase : UIBase
+{
+    protected PanelType _type;
+    public PanelType type
     {
         get
         {
-            return _skin;
+            return _type;
         }
     }
     /// <summary>
-    /// 皮肤transform
+    /// 面板打开时间
     /// </summary>
-    protected Transform skinTransform
+    protected float _openDuration = 0.2f;
+    /// <summary>
+    /// 面板打开时间
+    /// </summary>
+    public float openDuration
     {
         get
         {
-            return _skin.transform;
+            return _openDuration; 
         }
     }
+    /// <summary> 面板显示方式 </summary>
+    protected PanelMgr.PanelShowStyle _showStyle = PanelMgr.PanelShowStyle.CenterScaleBigNormal;
     /// <summary>
-    /// 住皮肤路径
+    /// 面板显示方式
     /// </summary>
-    private string mainSkinPath;
-    /// <summary>
-    /// 设置主皮肤
-    /// </summary>
-    /// <param name="path"></param>
-    protected void SetMainSkinPath(string path)
-    {
-        mainSkinPath = path;
-    }
-    /// <summary>
-    /// 所有的boxcollider
-    /// </summary>
-    private List<Collider> colliderList = new List<Collider>();
-
-    protected object[] _sceneArgs;
-    /// <summary>
-    /// 场景init参数
-    /// </summary>
-    public object[] sceneArgs
+    public PanelMgr.PanelShowStyle PanelShowStyle
     {
         get
         {
-            return _sceneArgs;
+            return _showStyle;
         }
     }
-    #endregion
-    #region 初始化相关
-    void Start()
-    {
-        OnStart();
-    }
-    void Update()
-    {
-
-    }
-    public void OnDestroy()
-    {
-        OnDestroyFront();
-        colliderList.Clear();
-        colliderList = null;
-        OnDestroyEnd();
-    }
-
-    public void Init(params object[] sceneArgs)
-    {
-        _sceneArgs = sceneArgs;
-        OnInit();
-        OnInitSkin();
-        OnInitSkinDone();
-        Collider[] colliders = this.GetComponentsInChildren<Collider>(true);
-        for (int i = 0; i < colliders.Length; i++)
-        {
-            Collider collider = colliders[i];
-            UIEventListener listener = UIEventListener.Get(collider.gameObject);
-            listener.onClick = OnClick;
-            colliderList.Add(collider);
-        }
-        OnInitDone();
-    }
-    #endregion
-    #region 虚方法
-
-    protected virtual void OnStart() { }
-    protected virtual void OnUpdate() { }
-    /// <summary>
-    /// 初始化
-    /// </summary>
-    protected virtual void OnInit() { }
-    protected virtual void OnInitDone() { }
-    /// <summary>
-    /// 开始删除
-    /// </summary>
-    protected virtual void OnDestroyFront() { }
-    /// <summary>
-    /// 删除完成
-    /// </summary>
-    protected virtual void OnDestroyEnd() { }
-
-    /// <summary>
-    /// 点击按钮
-    /// </summary>
-    /// <param name="go">被电击的对象</param>
-    protected virtual void OnClick(GameObject go) { }
-    /// <summary>
-    /// 初始化皮肤
-    /// </summary>
-    protected virtual void OnInitSkin()
-    {
-        if (!string.IsNullOrEmpty(mainSkinPath))
-        {
-            _skin = ResourceMgr.GetInstance().CreateGameObject(mainSkinPath, false);
-        }
-        _skin.transform.parent = this.gameObject.transform;
-        _skin.transform.localEulerAngles = Vector3.zero;
-        _skin.transform.localPosition = Vector3.zero;
-        _skin.transform.localScale = Vector3.one;
-    }
-    /// <summary>
-    /// 初始化皮肤完成
-    /// </summary>
-    protected virtual void OnInitSkinDone() { }
-    #endregion
 
     #region
     /// <summary>
-    /// 关闭当前界面
+    /// 发起关闭，播放效果
     /// </summary>
     protected void Close()
     {
-        Destroy(this.gameObject);
+        //Destroy(this.gameObject);
+        PanelMgr.Instance.HidePanel(type);
+    }
+    /// <summary>
+    /// 立刻关闭
+    /// </summary>
+    protected void CloseImmediate()
+    {
+        PanelMgr.Instance.DestroyPanel(type);
     }
     #endregion
+}
+
+public enum PanelType
+{
+    /// <summary>玩家信息面板 </summary>
+    PanelPlayInfo
 }

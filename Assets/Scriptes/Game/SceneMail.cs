@@ -22,6 +22,11 @@ public class SceneMail : SceneBase
         mItem = skinTransform.Find("PanelMove/Items/Item").gameObject;
         ShowItems();
     }
+    protected override void OnClick(GameObject go)
+    {
+        base.OnClick(go);
+        ClickButton(go);
+    }
     #endregion
 
     /// <summary>
@@ -79,11 +84,15 @@ public class SceneMail : SceneBase
     {
         if (click.name.Equals("BtnDelete"))
         {
-            Debug.Log("点击了" + click.transform.parent.name);
-            mItemList.Remove(click.transform.parent.gameObject);
-            Destroy(click.transform.parent.gameObject);
-            ChangePosition();
-            
+            //Debug.Log("点击了" + click.transform.parent.name);
+            //mItemList.Remove (click.transform.parent.gameObject);
+            //Destroy (click.transform.parent.gameObject);
+            //ChangePosition ();
+            SceneMgr.Instance.SwitchScene(SceneType.SceneChat);
+        }
+        else if (click.name.Equals("BtnReturn"))
+        {
+            SceneMgr.Instance.SwitchToPrevScene();
         }
     }
 

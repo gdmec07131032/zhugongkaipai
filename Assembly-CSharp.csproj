@@ -188,6 +188,8 @@
      <Compile Include="Assets\Scriptes\Core\View\PanelMgr.cs" />
      <Compile Include="Assets\Scriptes\Core\View\SceneBase.cs" />
      <Compile Include="Assets\Scriptes\Core\View\SceneMgr.cs" />
+     <Compile Include="Assets\Scriptes\Core\View\UIBase.cs" />
+     <Compile Include="Assets\Scriptes\Game\Chat\SceneChat.cs" />
      <Compile Include="Assets\Scriptes\Game\Home\PanelPlayInfo.cs" />
      <Compile Include="Assets\Scriptes\Game\Home\SceneHome.cs" />
      <Compile Include="Assets\Scriptes\Game\SceneLoading.cs" />

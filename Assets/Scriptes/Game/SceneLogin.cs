@@ -50,7 +50,7 @@ public class SceneLogin : SceneBase
             Debug.Log(string.Format("点击了登陆 账号：{0} 密码：{1}", mInputAcc.value, mInputPass.value));
             //GameObject go = ResourceMgr.GetInstance().CreateGameObject("Game/UI/SceneLoading", false);
             //Destroy(this.gameObject);
-            SceneMgr.Instance.SwitchScene("SceneLoading","hello world");
+            SceneMgr.Instance.SwitchScene(SceneType.SceneLoading,"hello world");
         }
         else if (click.name.Equals("BtnReg"))
         {

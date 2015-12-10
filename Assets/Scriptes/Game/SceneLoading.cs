@@ -43,7 +43,7 @@ public class SceneLoading : SceneBase {
         else
         {
             Debug.Log("加载完成了!");
-            SceneMgr.Instance.SwitchScene("SceneHome", "hello world");
+            SceneMgr.Instance.SwitchScene(SceneType.SceneHome, "hello world");
         }
     }
 
