@@ -1,38 +1,24 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\Core\View\PanelBase.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scriptes\Core\View\SceneMgr.cs">
     <Files>
-      <File FileName="Assets\Scriptes\Game\Home\PanelPlayInfo.cs" Line="15" Column="22" />
-      <File FileName="Assets\Scriptes\Game\SceneMail.cs" Line="90" Column="33" />
-      <File FileName="Assets\Scriptes\Core\View\UIBase.cs" Line="75" Column="5" />
-      <File FileName="Assets\Scriptes\Core\View\PanelMgr.cs" Line="53" Column="19" />
+      <File FileName="Assets\Scriptes\Core\View\PanelMgr.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scriptes\Game\Home\PanelPlayInfo.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scriptes\Game\SceneMail.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scriptes\Core\View\UIBase.cs" Line="1" Column="1" />
       <File FileName="Assets\Scriptes\Core\View\PanelBase.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scriptes\Game\SceneLoading.cs" Line="14" Column="1" />
+      <File FileName="Assets\Scriptes\Game\SceneLoading.cs" Line="1" Column="1" />
       <File FileName="Assets\Scriptes\Game\Home\SceneHome.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scriptes\Core\View\SceneMgr.cs" Line="44" Column="20" />
-      <File FileName="Assets\Scriptes\Core\View\SceneBase.cs" Line="21" Column="5" />
-      <File FileName="Assets\Scriptes\Game\SceneLogin.cs" Line="14" Column="1" />
+      <File FileName="Assets\Scriptes\Core\View\SceneMgr.cs" Line="53" Column="76" />
+      <File FileName="Assets\Scriptes\Core\View\SceneBase.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scriptes\Game\SceneLogin.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scriptes\Core\View\LayerMgr.cs" Line="53" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Game\BtnLogin.cs" line="20" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Game\BtnLogin.cs" line="11" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Game\BtnLogin.cs" line="12" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Game\BtnLogin.cs" line="26" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Game\BtnLogin.cs" line="23" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Game\BtnLogin.cs" line="32" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Game\Home\PanelPlayInfo.cs" line="14" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Core\View\PanelMgr.cs" line="50" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Core\View\PanelMgr.cs" line="63" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Core\View\PanelMgr.cs" line="65" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Core\View\PanelMgr.cs" line="82" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Core\View\PanelMgr.cs" line="88" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Core\View\PanelMgr.cs" line="108" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Core\View\UIBase.cs" line="76" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Core\View\UIBase.cs" line="89" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Core\View\UIBase.cs" line="118" />
-      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Core\View\UIBase.cs" line="127" />
+      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Core\View\PanelMgr.cs" line="85" />
+      <Breakpoint file="E:\Site\zhugongkaipai\Assets\Scriptes\Core\View\LayerMgr.cs" line="45" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

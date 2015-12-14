@@ -50,6 +50,7 @@ public class SceneMgr
         scene.transform.parent.localEulerAngles = Vector3.zero;
         scene.transform.localScale = Vector3.one;
         scene.transform.localPosition = Vector3.zero;
+        LayerMgr.GetInstance().SetLayer(baseObj.gameObject, LayerType.Scene);
         if (name.Equals(mainSceneName))
         {//如果进入主场景，则清空记录
             switchRecorder.Clear();

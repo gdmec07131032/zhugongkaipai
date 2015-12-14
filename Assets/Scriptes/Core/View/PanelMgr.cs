@@ -82,6 +82,7 @@ public class PanelMgr {
             scene.transform.localEulerAngles = Vector3.zero;
             scene.transform.localScale = Vector3.one;
             scene.transform.localPosition = Vector3.zero;
+            LayerMgr.GetInstance().SetLayer(current.gameObject, LayerType.Panel);
         }
         StartShowPanel(current, current.PanelShowStyle, true);
     }
