@@ -150,6 +150,7 @@
      <None Include="Assets\Resources\Public\Atlas\prop_icon.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
      <None Include="Assets\Resources\Public\Atlas\General_icon.txt" />
+     <None Include="Assets\Resources\Public\Atlas\ui_atlas_icon_common.txt" />
      <None Include="Assets\Resources\Public\Atlas\equip_icon.txt" />
      <None Include="Assets\Resources\Public\Atlas\mmap.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Masked 3.shader" />
@@ -165,8 +166,6 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
-     <None Include="Assets\Resources\Public\Atlas\ui_atlas_icon_common.txt" />
-     <None Include="Assets\Resources\Public\Atlas\ui_atlas_img_local_normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
@@ -177,6 +176,7 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (TextureClip).shader" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\Resources\Public\Atlas\ui_atlas_img_local_normal.txt" />
      <None Include="Assets\Resources\Public\Atlas\ui_atlas_battle.txt" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />

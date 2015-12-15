@@ -37,6 +37,10 @@ public class SceneHome : SceneBase
         {
             PanelMgr.Instance.ShowPanel(PanelType.PanelPlayInfo);
         }
+        else if (click.name.Equals("BtnRecharge"))
+        {
+            SceneMgr.Instance.SwitchScene(SceneType.SceneShop);
+        }
     }
     #endregion
 }

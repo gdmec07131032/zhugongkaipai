@@ -48,6 +48,8 @@ public enum SceneType
     /// <summary>邮件</summary>
     SceneMail,
     /// <summary>聊天</summary>
-    SceneChat
+    SceneChat,
+    /// <summary>商城</summary>
+    SceneShop
 
 }
