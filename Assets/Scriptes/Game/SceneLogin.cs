@@ -32,13 +32,11 @@ public class SceneLogin : SceneBase
     protected override void OnDestroyFront()
     {
         base.OnDestroyFront();
-        Debug.Log("OnDestroyFront");
     }
 
     protected override void OnDestroyEnd()
     {
         base.OnDestroyEnd();
-        Debug.Log("OnDestroyEnd");
         mInputAcc = null;
         mInputPass = null;
     }
@@ -47,7 +45,7 @@ public class SceneLogin : SceneBase
     {
         if (click.name.Equals("BtnLogin"))
         {
-            Debug.Log(string.Format("点击了登陆 账号：{0} 密码：{1}", mInputAcc.value, mInputPass.value));
+            //Debug.Log(string.Format("点击了登陆 账号：{0} 密码：{1}", mInputAcc.value, mInputPass.value));
             //GameObject go = ResourceMgr.GetInstance().CreateGameObject("Game/UI/SceneLoading", false);
             //Destroy(this.gameObject);
             SceneMgr.Instance.SwitchScene(SceneType.SceneLoading,"hello world");

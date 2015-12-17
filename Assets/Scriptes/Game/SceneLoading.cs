@@ -16,7 +16,7 @@ public class SceneLoading : SceneBase {
     {
         base.OnInitDone();
         string str = (string)sceneArgs[0];
-        Debug.Log(str);
+//        Debug.Log(str);
 
         mSlider = skinTransform.Find("Slider").GetComponent<UISlider>();
         mLabel = skinTransform.Find("Label").GetComponent<UILabel>();
