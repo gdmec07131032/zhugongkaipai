@@ -213,7 +213,9 @@
     <Compile Include="Assets\Scriptes\Game\SceneLoading.cs" />
     <Compile Include="Assets\Scriptes\Game\SceneLogin.cs" />
     <Compile Include="Assets\Scriptes\Game\SceneMail.cs" />
+    <Compile Include="Assets\Scriptes\Game\Shop\PanelShop.cs" />
     <Compile Include="Assets\Scriptes\Game\Shop\SceneShop.cs" />
+    <Compile Include="Assets\Scriptes\Game\Shop\SelfShopItem.cs" />
     <Compile Include="Assets\Scriptes\TestRes.cs" />
   </ItemGroup>
   <ItemGroup>

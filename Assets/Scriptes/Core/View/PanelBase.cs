@@ -39,7 +39,13 @@ public class PanelBase : UIBase
         }
     }
 
-    #region
+    #region 页面处理方法
+
+    public virtual void OnInit(params object[] sceneArgs)
+    {
+        _sceneArgs = sceneArgs;
+        Init();
+    }
     /// <summary>
     /// 发起关闭，播放效果
     /// </summary>
@@ -61,5 +67,7 @@ public class PanelBase : UIBase
 public enum PanelType
 {
     /// <summary>玩家信息面板 </summary>
-    PanelPlayInfo
+    PanelPlayInfo,
+    /// <summary>商品信息面板 </summary>
+    PanelShop
 }

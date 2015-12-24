@@ -3,17 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 public class SceneBase : UIBase
 {
-    protected object[] _sceneArgs;
-    /// <summary>
-    /// 场景init参数
-    /// </summary>
-    public object[] sceneArgs
-    {
-        get
-        {
-            return _sceneArgs;
-        }
-    }
+    //protected object[] _sceneArgs;
+    ///// <summary>
+    ///// 场景init参数
+    ///// </summary>
+    //public object[] sceneArgs
+    //{
+    //    get
+    //    {
+    //        return _sceneArgs;
+    //    }
+    //}
     /// <summary>
     /// 初始化场景
     /// </summary>

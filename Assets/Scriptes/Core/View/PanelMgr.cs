@@ -60,19 +60,20 @@ public class PanelMgr {
     private Transform parentObj = null;
     /// <summary>当前打开的面板 </summary>
     private PanelBase current = null;
-    public void ShowPanel(PanelType panelType, params object[] sceneArgs)
+    public void ShowPanel(PanelType panelType, params object[] panelArgs)
     {
         if (panels.ContainsKey(panelType))
         {
             current = panels[panelType];
             current.gameObject.SetActive(false);
+            current.OnInit(panelArgs);
         }
         else
         {
             GameObject scene = new GameObject(panelType.ToString());
             current = scene.AddComponent(Type.GetType(panelType.ToString())) as PanelBase;
             current.gameObject.SetActive(false);
-            current.Init();
+            current.OnInit(panelArgs);
             panels.Add(panelType, current);
             if (parentObj == null)
             {

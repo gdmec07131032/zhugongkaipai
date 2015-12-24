@@ -24,6 +24,7 @@ public class SelfShopItem : MonoBehaviour
             name.text = data.name;
             num.text = data.num.ToString();
             price.text = data.price.ToString();
+            item.name = "Shop_" + data.id.ToString();
         }
         if (list.Count < selfList.Count)
         {

@@ -59,7 +59,7 @@ public class SceneShop : SceneBase {
         {
             mLine++;
         }
-        Debug.Log(string.Format("行数：{0}，余数：{1}，总个数：{2}", mLine, mRemainder, mListData.Count));
+        //Debug.Log(string.Format("行数：{0}，余数：{1}，总个数：{2}", mLine, mRemainder, mListData.Count));
         for (int i = 0; i < mLine; i++)
         {
             GameObject item = Instantiate(mItem) as GameObject;
@@ -80,9 +80,14 @@ public class SceneShop : SceneBase {
     void InitItem(GameObject item, int index)
     {
         SelfShopItem self = item.GetComponent<SelfShopItem>();
+        foreach (GameObject obj in self.selfList)
+        {
+            UIEventListener listener = UIEventListener.Get(obj);
+            listener.onClick = ClickButton;
+        }
         List<ShopItemData> list = new List<ShopItemData>();
         int nowListIndex = index * mOneLineNum;
-        Debug.Log("当前行的索引：" + nowListIndex);
+        //Debug.Log("当前行的索引：" + nowListIndex);
         int forNum = mOneLineNum;
         if (index == (mLine - 1) && mRemainder != mOneLineNum)
         {
@@ -150,6 +155,12 @@ public class SceneShop : SceneBase {
         else if (click.name.Equals("BtnGift"))
         {
             ChangeMenuButtonStyle(click);
+        }
+        else if (click.name.StartsWith("Shop_"))
+        {
+            int id = 0;
+            if (!int.TryParse(click.name.Replace("Shop_", ""), out id)) return;
+            PanelMgr.Instance.ShowPanel(PanelType.PanelShop,id);
         }
     }
     void ChangeMenuButtonStyle(GameObject clickButton)
